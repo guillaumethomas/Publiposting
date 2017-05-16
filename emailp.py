@@ -11,9 +11,10 @@ def main():
     gmail_user = 'guillaume.ronan.thomas@gmail.com'
     gmail_password = input('Password ?\n')
 
-    to = ["guillaumethomas@outlook.com", "fva@lapost.net", "francois.vaillergues@sncf.fr"]
+    to = ["guillaumethomas@outlook.com", "fva@laposte.net", "francois.vaillergues@sncf.fr"]
     subject = "Git HUB"
-    content = "Salut!\n \nVas sur Git HUB! \n \n https://github.com/guillaumethomas/Publiposting \n"
+    content = "Salut!\n \nVas sur Git HUB! \n \n https://github.com/guillaumethomas/Publiposting \n " \
+              "\n Sent from a Python Script"
 
     server = connection_server(gmail_user,gmail_password)
 
