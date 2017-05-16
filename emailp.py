@@ -11,9 +11,9 @@ def main():
     gmail_user = 'guillaume.ronan.thomas@gmail.com'
     gmail_password = input('Password ?\n')
 
-    to = ["guillaumethomas@outlook.com", "guillaumethomas@att.net"]
-    subject = "Test Python"
-    content="Coucou Mon Panda\nJe fais un test en python\n \nBisous\nTon Loup"
+    to = ["guillaumethomas@outlook.com", "fva@lapost.net", "francois.vaillergues@sncf.fr"]
+    subject = "Git HUB"
+    content = "Salut!\n \nVas sur Git HUB! \n \n https://github.com/guillaumethomas/Publiposting \n"
 
     server = connection_server(gmail_user,gmail_password)
 
@@ -40,11 +40,11 @@ def connection_server(username, password):
 
 def mail_o(content, subject, sender, recipient):
 
-    msg=EmailMessage()
+    msg = EmailMessage()
     msg.set_content(content)
-    msg['Subject']=subject
-    msg['From']=sender
-    msg['To']=recipient
+    msg['Subject'] = subject
+    msg['From'] = sender
+    msg['To'] = recipient
 
     return msg
 
