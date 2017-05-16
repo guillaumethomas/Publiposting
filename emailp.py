@@ -2,6 +2,7 @@
 with one server."""
 
 import smtplib
+from getpass import getpass
 from email.message import EmailMessage
 
 
@@ -9,9 +10,9 @@ def main():
 
     print("This is a script to send email")
     gmail_user = 'guillaume.ronan.thomas@gmail.com'
-    gmail_password = input('Password ?\n')
+    gmail_password = getpass('Password ?\n')
 
-    to = ["guillaumethomas@outlook.com", "fva@laposte.net", "francois.vaillergues@sncf.fr"]
+    to = ["guillaumethomas@outlook.com"]
     subject = "Git HUB"
     content = "Salut!\n \nVas sur Git HUB! \n \n https://github.com/guillaumethomas/Publiposting \n " \
               "\n Sent from a Python Script"
